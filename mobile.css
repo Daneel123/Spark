@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=Fira+Sans+Condensed:wght@500&display=swap');
+
+body {
+   font-family: "Exo 2", sans-serif;
+   color: #05386b;
+   margin: 0;
+   background-color: #5cdb95;
+    }
+
+header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2% 0;
+   text-align: center;
+   width: 100%;
+   
+}
+
+header h1 {
+   margin: 0 10%;
+}
+    
+select{
+   appearance: none;
+   border: none;
+   outline: none;
+   background: none;
+   font-size: 100%;
+   font-weight: 700;
+   padding: 20% 20%;
+   color: #05386b;
+   font-family: "Exo 2", sans-serif;
+}
+
+select option:not(:checked){
+   color: #05386b;
+   background-color: #edf5e1
+}
+
+.language-selector{
+   margin: 0 5%;
+}
+
+option:checked {
+  background-color: #05386b;
+  color: #edf5e1;
+}
+
+.container {
+   display: grid;
+   align-items: center;
+   color: black;
+}
+
+.img1{
+   width: 50%;
+   position: absolute;
+   left: 63.3%;
+   top: 83.7%;
+}
+
+.img2{
+   
+}
+
+img{
+   width: 0%;
+}
+
+.first-div {
+   text-align: center;
+   order: 1;
+   padding-bottom: 15%;
+}
+
+.first-div button {
+   background-color: #05386b;
+   color: #edf5e1;
+   border: none;
+   border-radius: 5%;
+   cursor: pointer;
+   font-size: 2em;
+   padding: 2% 4%;
+}
+
+.first-div button:hover {
+   background-color: #379684;
+}
+
+.second-div {
+   padding: 5% 10%;
+   order: 0;
+   font-size: 105%;
+   text-align: center;
+   color: #edf5e1;
+}
+
+h3{
+   font-size: 1.5em;
+}
+
+p{
+   font-size: 100%;
+}
+
+footer {
+   padding: 2% 0;
+   text-align: center;
+   font-weight: 700;
+} 
