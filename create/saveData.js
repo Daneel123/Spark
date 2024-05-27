@@ -40,13 +40,13 @@ function saveData() {
 
     data.questions.push(questionData);
   }
-  
+
   const jsonData = JSON.stringify(data, null, 2);
-  
+
   const newPage = createPage(data);
-  
-  function createPage(data) { //Создайте функцию createPage(), которая создаст новую страницу с введенными данными.
-    const newPage = window.open("", "_blank");
+
+  function createPage(data) {
+    const newPage = window.open("https://daneel123.github.io/Spark/create/create.html", "_blank");
     newPage.document.write(`
         <html>
             <head>
@@ -80,17 +80,4 @@ function saveData() {
   dialog.innerHTML += `<pre>${jsonData}</pre>`;
   dialog.style.width = '400px';
   dialog.style.height = '600px';
-
-  // Add the dialog element to the document
-  document.body.appendChild(dialog);
-
-  // Show the dialog as a modal window
-  dialog.showModal();
-
-  // Create a new page with the data
-  
-
-  // Print the URL of the new page to the console
-  console.log(newPage.location.href);
-}
 
