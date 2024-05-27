@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Spark create</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="Question.js"></script>
+   <script src="AnswerVariant.js"></script>
+   <script src="loadMedia.js"></script>
+   <script src="saveData.js"></script>
+   <script src="changeLanguage.js"></script>
+   <script src="navigator.userAgent.js"></script>
+   <script>
+      let answerCount = 0;
+   </script>
+
+<style>        
+   dialog {
+        border: none;
+        outline: none;
+    }
+</style>
+</head>
+<body>
+   <header>
+      <h1>Spark</h1>
+      <div class="language-selector">
+         <select id="language-select">
+            <option value="ru">Русский</option>
+            <option value="kz">Қазақ тілі</option>
+            <option value="en">English</option>
+         </select>
+      </div>
+   </header>
+   <div class="conteiner">
+      <div>
+         <h1>Создание задач</h1>
+      </div>
+      <input style="margin-bottom: 3%;" type="text" id="theme" placeholder="Введите тему">
+      <div id="questions-container">
+         <!-- Вопросы будут добавлены сюда -->
+      </div>
+      <div class="addquestion">
+         <button class="add" onclick="addQuestion()">Добавить вопрос</button>
+      </div>
+      <div class="addquestion">
+         <button class="save" onclick="saveData()">Сохранить</button>
+      </div>
+   </div>
+   <div>
+       <img class="img" src="https://i.ibb.co.com/cNXD90C/background.png">
+    </div>
+   <footer>
+      <p>&copy; 2024 Spark</p>
+   </footer> 
+</body>
+</html>
