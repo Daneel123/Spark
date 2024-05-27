@@ -40,13 +40,14 @@ function saveData() {
 
     data.questions.push(questionData);
   }
-
+  
   const jsonData = JSON.stringify(data, null, 2);
-
-  const newPage = createPage(data);
-
-  function createPage(data) {
-    const newPage = window.open("https://daneel123.github.io/Spark/create/create.html", "_blank");
+  
+  const baseURL = new URL(window.location.href).origin + new URL(window.location.href).pathname.split('/').slice(0, -1).join('/') + '/';
+  const newPage = window.open(`${baseURL}${data.theme}`, "_blank");
+  
+  function createPage(data, baseURL) {
+    const newPage = window.open(`${baseURL}${data.theme}`, "_blank");
     newPage.document.write(`
         <html>
             <head>
@@ -73,6 +74,8 @@ function saveData() {
 
     return newPage;
 }
+
+  // Create a
 
   // Create a dialog element for the modal window
   const dialog = document.createElement('dialog');
