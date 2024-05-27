@@ -74,12 +74,23 @@ function saveData() {
 
     return newPage;
 }
-
-  // Create a
-
-  // Create a dialog element for the modal window
+   // Create a dialog element for the modal window
   const dialog = document.createElement('dialog');
   dialog.innerHTML += `<p>Ссылка на новую страницу: <a href="${newPage}" target="_blank">${newPage}</a></p>`;
   dialog.innerHTML += `<pre>${jsonData}</pre>`;
   dialog.style.width = '400px';
   dialog.style.height = '600px';
+
+  // Add the dialog element to the document
+  document.body.appendChild(dialog);
+
+  // Show the dialog as a modal window
+  dialog.showModal();
+
+  // Create a new page with the data
+  
+
+  // Print the URL of the new page to the console
+  console.log(newPage.location.href);
+}
+   
