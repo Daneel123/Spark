@@ -1,0 +1,35 @@
+name: Update HTML
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Update HTML file
+      run: |
+        echo '<html>
+        <head>
+            <title>Updated Page</title>
+        </head>
+        <body>
+            <h1>This is an updated page</h1>
+        </body>
+        </html>' > test/test.html
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'github-actions'
+        git config --global user.email 'github-actions@github.com'
+        git add test/test.html
+        git commit -m 'Update test.html'
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
