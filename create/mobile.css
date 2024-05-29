@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&family=Fira+Sans+Condensed:wght@500&display=swap');
+
+body {
+   font-family: "Exo 2", sans-serif;
+   color: #05386b;
+   margin: 0;
+   background-color: #5cdb95;
+   display: flex;
+   height: 100vh;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2% 0;
+   text-align: center;
+   width: 100%;
+}
+
+header h1 {
+   margin: 0 10%;
+}
+    
+select{
+   appearance: none;
+   border: none;
+   outline: none;
+   background: none;
+   font-size: 100%;
+   font-weight: 700;
+   padding: 20% 20%;
+   color: #05386b;
+   font-family: "Exo 2", sans-serif;
+}
+
+select option:not(:checked){
+   color: #05386b;
+   background-color: white;
+}
+
+.language-selector{
+   margin: 0 5%;
+}
+
+option:checked {
+  background-color: #05386b;
+  color: #edf5e1;
+}
+
+.conteiner{
+   margin: 0 5%;
+   background-color: white;
+   text-align: center;
+}
+
+.conteiner h1{
+   padding: 5% 0 2% 0;
+}
+
+.delete-question {
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   cursor: pointer;
+   font-size: 150%;
+}
+
+input{
+   outline: none;
+   border: none;
+   border-bottom: 1px solid #05386b;
+   box-shadow: none;
+   background: none;
+   width: 80%;
+   font-size: 120%;
+   color: #05386b;
+   text-align: center;
+}
+
+.file-input {
+   position: relative;
+   overflow: hidden;
+}
+
+.file-input input[type="file"] {
+   position: relative;
+   top: 10px;
+   opacity: 0;
+   cursor: pointer;
+   width: 50%;
+   height: 44px;
+   z-index: 1;
+}
+
+.ansvar{
+   width: 75%;
+   margin-bottom: 3%;
+}
+
+.file-button {
+    background-color: #05386b;
+    color: #fff;
+    padding: 2% 4%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.file-button:hover {
+    background-color: #379684;
+}
+
+.question-container {
+   border-top: 1px solid #ccc;
+   margin-bottom: 4%;
+   padding-top: 4%;
+   position: relative;
+}
+
+.addquestion{
+   padding-bottom: 4%;
+}
+
+button {
+   background-color: #05386b;
+   color: #edf5e1;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 100%;
+   padding: 2% 4%;
+}
+
+button:hover {
+   background-color: #379684;
+}
+
+.correct-mark {
+   color: green;
+   font-weight: bold;
+   cursor: pointer;
+   font-size: 150%;
+   padding-left: 1%;
+}
+
+.correct {
+   background-color: green;
+   color: white;
+   padding: 2px;
+   border-radius: 50%;
+}
+
+.ansb{
+   background: none; 
+   color: darkred; 
+   font-size: 150%; 
+   padding: 0 0 0 3%;
+}
+
+.delete-button{
+   position: relative;
+   right: 37px;
+   bottom: 14px;
+   padding: 10px 13px;
+   background-color: darkred;
+}
+
+.delete-button:hover {
+   background-color: red;
+}
+
+.img{
+   height: 50%;
+   position: absolute;
+   z-index: -1;
+   top: 45%;
+   left: 1%
+}
+
+
+footer {
+   padding: 2% 0;
+   text-align: center;
+   font-weight: 700;
+   position: relative;
+   top: 150px;
+}
