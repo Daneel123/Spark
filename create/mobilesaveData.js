@@ -57,7 +57,7 @@ function saveData() {
                     body {font-family: "Exo 2", sans-serif; color: #05386b; margin: 0; background-color: #5cdb95; display: flex; height: 100vh; flex-direction: column; justify-content: space-between;}
                     header {padding: 1% 0; display: flex; flex-direction: row; align-items: center; justify-content: space-between; text-align: center; width: 100%;}
                     footer {padding: 2% 0; text-align: center; font-weight: 700; position: relative; top: 150px; font-size: 175%;}
-                    .img {height: 0%; position: absolute; z-index: -1; top: 5%; left: 60%;}
+                    .img {height: 50%; position: absolute; z-index: -1; top: 10%; left: 15%;}
                     button {background-color: #05386b; color: #edf5e1; border: none; border-radius: 5px; cursor: pointer; font-size: 225%; padding: 2% 4%;}
                     button:hover {background-color: #379684;}
                     .conteiner {margin: 0 15%; background-color: white; text-align: center; padding: 4% 0;}
